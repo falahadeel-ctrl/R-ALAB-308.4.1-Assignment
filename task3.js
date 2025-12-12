@@ -8,18 +8,18 @@ for (i = 0; i < row.length; i++) {
     new_array1.push(cell_element)
 }
 // console.log(new_array1)
-function Lcase (element){
+function Lcase(element) {
     return element.toLowerCase();
 }
 
 header = new_array1[0].map(Lcase);
 
-for(let i=1;i<new_array1.length;i++){
+for (let i = 1; i < new_array1.length; i++) {
     let object = {};
-    for(let z=1; z<header.length;z++){
- object[header[z]]=new_array1[i][z];
+    for (let z = 0; z < header.length; z++) {
+        object[header[z]] = new_array1[i][z];
     }
-object_array.push(object);
+    object_array.push(object);
 }
 console.log(object_array)
 
