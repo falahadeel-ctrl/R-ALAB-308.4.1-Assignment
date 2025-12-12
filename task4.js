@@ -7,9 +7,10 @@
 // let aa = students.map(ucase);
 // console.log(aa);
 
-// let space = {
-//     user: [1,2,3] ,
-//     df: [4,5,6]
-// }
+let space = {
+    user: [1,2,3] ,
+    df: [4,5,6]
+}
 
-// console.log(space.user[0])
+space.user= 4
+console.log(space.user)

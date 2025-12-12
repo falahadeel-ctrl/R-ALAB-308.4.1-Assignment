@@ -14,18 +14,18 @@ function Lcase (element){
 
 header = new_array1[0].map(Lcase);
 
-// for(let i=1;i<new_array1.length;i++){
-//     let object = {};
-//     object_array.push(header[i]);
-//     for(let z=0; z<new_array1.length;z++){
-// object_array.push(object);
-//     }
-
-// }
-
-console.log(header)
+for(let i=1;i<new_array1.length;i++){
+    let object = {};
+    for(let z=1; z<header.length;z++){
+ object[header[z]]=new_array1[i][z];
+    }
+object_array.push(object);
+}
+console.log(object_array)
 
 
+
+// // // // // ROUGH WORK
 
 // let table ={}
 
@@ -33,3 +33,19 @@ console.log(header)
 //   console.log(string+=table.keys());
 // }
 
+// const students = [`dfdd`,`dsesv`,`sdvdsvd`,`dcsdd`];
+
+// function ucase (){
+// return toUpperCase();
+// }
+
+// let aa = students.map(ucase);
+// console.log(aa);
+
+// let space = {
+//     user: [1,2,3] ,
+//     df: [4,5,6]
+// }
+
+// space.user= 4
+// console.log(space.user)
