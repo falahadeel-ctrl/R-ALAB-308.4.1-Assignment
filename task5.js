@@ -27,5 +27,21 @@ object_array.splice(1, 0, { id: "48", name: "Barry", occupation: "Runner", age: 
 
 object_array.push({ id: "7", name: "Bilbo", occupation: "None", age: "111" })
 
-let unpacking = ...object_array"
-console.log(object_array)
+// console.log(object_array)
+
+//task 5 begain point 
+let new_array = [];
+
+heading = Object.keys(object_array[0]);
+new_array.unshift(heading);
+
+for (i = 0; i < object_array.length; i++) {
+
+    items = Object.values(object_array[i]);
+    new_array.push(items)
+
+}
+
+console.log(new_array.join("\n"))
+
+
